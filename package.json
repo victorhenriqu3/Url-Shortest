@@ -1,0 +1,25 @@
+{
+  "name": "url-shortest",
+  "version": "1.0.0",
+  "description": "URL shortening service using Node",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorhenriqu3/Url-Shortest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorhenriqu3/Url-Shortest/issues"
+  },
+  "homepage": "https://github.com/victorhenriqu3/Url-Shortest#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
