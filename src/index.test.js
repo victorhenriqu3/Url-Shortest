@@ -14,4 +14,15 @@ describe('EndPoints Tests', () => {
     expect(res.body.url).toBe("https://github.com/victorhenriqu3/Url-Shortest");
   });
 
+  it('GET /decode/:id', async () => {
+    const id = 'cpKi9RckL'
+    const res = await request(app)
+      .get(`/decode/${id}`)
+
+    console.log(res);
+
+    expect(res.statusCode).toBe(200);
+
+  })
+
 })

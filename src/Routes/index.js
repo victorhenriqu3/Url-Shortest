@@ -21,7 +21,7 @@ urlRouter.post('/encode', async (req, res) => {
 urlRouter.get('/decode/:id?', async (req, res) => {
   const params = req.params;
   const clientes = await db.selectId(params);
-  res.status(201).json(clientes);
+  res.status(200).json(clientes);
 })
 
 module.exports = urlRouter;
