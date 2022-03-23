@@ -24,7 +24,7 @@ Implement a URL shortening service using Node and MySQL.
 
 - [x] Persist the URLs to a database of your choice.
 
-- [ ] Provide detailed instructions on how to run your assignment in a separate markdown file (e.g. README.md).
+- [x] Provide detailed instructions on how to run your assignment in a separate markdown file (e.g. README.md).
 
 ### 📦 Bonus
 
@@ -72,4 +72,18 @@ After that, fill in the information in the `config.json` file following the mode
     "database": "****"
   }
 }
+```
+<br>
+
+After that you can start the application in development mode using:
+
+NPM:
+```console
+npm run dev
+```
+
+Yarn:
+
+```console
+yarn dev
 ```
