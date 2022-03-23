@@ -10,6 +10,12 @@ Implement a URL shortening service using Node and MySQL.
 
 <br>
 
+## 💼 Brief
+
+ShortLink is a URL shortening service where you enter a URL such as https://codesubmit.io/library/react and it returns a short URL such as http://short.est/GeAi9K.
+
+<br>
+
 ## 📌 Tasks
 
 - [x] Two endpoints are required:
@@ -28,7 +34,7 @@ Implement a URL shortening service using Node and MySQL.
 
 ### 📦 Bonus
 
-- [ ] Provide API tests for both endpoints
+- [x] Provide API tests for both endpoints
 
 <br>
 
