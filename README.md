@@ -87,3 +87,19 @@ Yarn:
 ```console
 yarn dev
 ```
+
+## 🧪 Testing `url_shortest`
+
+- Tests were implemented using [Jest](https://jestjs.io) and [Supertest](https://github.com/visionmedia/supertest).
+  
+To Use `Url-Shortest`, follow these steps:
+NPM:
+```console
+npm run test
+```
+
+Yarn:
+
+```console
+yarn test
+```
