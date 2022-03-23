@@ -23,9 +23,12 @@ app.get("/", (req, res) => {
 });
 
 // Encode Route : Route responsible for receiving the url that will be stored.
-app.post('/encode', (req, res) => {
-  const short = shortid.generate();
-  res.status(201).json({ id: short, url: req.body.url });
+app.post('/encode', async (req, res) => {
+  const short = shortid.generate()
+  const body = { id: short, url: req.body.url }
+  const results = await db.insertUrls(body)
+
+  res.status(201).json(body);
 })
 
 app.listen(port, () => {

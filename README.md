@@ -14,7 +14,7 @@ Implement a URL shortening service using Node and MySQL.
 
 - [ ] Two endpoints are required:
 
-  - [ ] /encode - Encodes a URL to a shortened URL
+  - [x] /encode - Encodes a URL to a shortened URL
 
   - [ ] /decode - Decodes a shortened URL to its original URL
 

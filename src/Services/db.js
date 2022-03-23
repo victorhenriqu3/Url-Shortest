@@ -13,4 +13,12 @@ async function selectUrls() {
   return rows;
 }
 
-module.exports = { selectUrls, connect }
+async function insertUrls(body) {
+  const conn = await connect();
+  const sql = 'INSERT INTO url_shortest(id,url_original) VALUES(?,?)';
+  const params = [body.id, body.url]
+
+  return await conn.query(sql, params)
+}
+
+module.exports = { insertUrls, selectUrls, connect }
