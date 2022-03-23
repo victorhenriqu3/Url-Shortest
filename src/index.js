@@ -31,6 +31,10 @@ app.post('/encode', async (req, res) => {
   res.status(201).json(body);
 })
 
+// Decode Route : Route responsible for returning the stored url according to the requested id
+app.get('/decode/:id?', (req, res) => {
+  res.status(201).json(req.params);
+})
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 })
