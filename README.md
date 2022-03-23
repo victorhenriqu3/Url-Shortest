@@ -12,17 +12,17 @@ Implement a URL shortening service using Node and MySQL.
 
 ## 📌 Tasks
 
-- [ ] Two endpoints are required:
+- [x] Two endpoints are required:
 
   - [x] /encode - Encodes a URL to a shortened URL
 
-  - [ ] /decode - Decodes a shortened URL to its original URL
+  - [x] /decode - Decodes a shortened URL to its original URL
 
-  - [ ] Both endpoints should return JSON
+  - [x] Both endpoints should return JSON
 
 <br>
 
-- [ ] Persist the URLs to a database of your choice.
+- [x] Persist the URLs to a database of your choice.
 
 - [ ] Provide detailed instructions on how to run your assignment in a separate markdown file (e.g. README.md).
 

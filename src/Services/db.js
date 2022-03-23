@@ -21,4 +21,14 @@ async function insertUrls(body) {
   return await conn.query(sql, params)
 }
 
-module.exports = { insertUrls, selectUrls, connect }
+async function selectId(paramsUrl) {
+  const conn = await connect();
+  const sql = "SELECT * FROM url_shortest WHERE id=?";
+  const params = [paramsUrl.id]
+
+  const [rows] = await conn.query(sql, params)
+
+  return rows
+}
+
+module.exports = { selectId, insertUrls, selectUrls, connect }
